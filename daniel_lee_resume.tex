@@ -74,24 +74,27 @@
 \end{tabular*}
 
 
-%--------TECHNICAL EXPERTISE------------
-\section{Technical Expertise}
+%-----------PROJECTS-----------------
+\section{Projects}
 \resumeSubHeadingListStart
     \resumeSubItem
-    {\textbf{Languages}}
-    {Python, Golang, C\#, C/x86 Assembly, SQL, Javascript, HTML/CSS}
+    {\textbf{Patient Visualization Tool}}
+    {A map based web application tool that assists in the discovery of healthcare providers based on various search criteria like their diagnosis codes, patient age ranges, etc.
+    This product is targeted at select group of corporate entities operating in pharmaceuticals and case management. 
+    In this project I demonstrated the use of tools like the gRPC framework because it performs well at scale. 
+    The product back-end was written in Go and communicated to a Vuejs and Leaflet front-end using gRPC.}
     \resumeSubItem
-    {\textbf{Technologies}}
-    {Flask, Git, Docker Swarm, .NET Core, MySQL, Redis, Kafka, LaTeX, Bash, Vim}
-\resumeSubHeadingListEnd
-
-
-%-----------EDUCATION-----------------
-\section{Education}
-\resumeSubHeadingListStart
-    \resumeSubheading
-    {Washington State University Vancouver}{Vancouver, WA}
-    {Bachelor of Science in Computer Science}{Expected: May 2021}
+    {\textbf{Distributed Management Tool}}
+    {This software allows users to experiment with concurrent programming and distributed service design.
+    The stack includes: Command and Control (C2) server, Package download server, Advanced Persistent Threat (APT) application.
+    The APT has a tiny footprint and runs management functionality modularly upon requests.
+    The APT establishes a communication channel with the C2 and intelligently requests executables from local download servers.
+    This system is also capable of switching to a decentralized C2 system that uses the APTs and a version of the RAFT consensus algorithm.}
+    \resumeSubItem
+    {\textbf{Systems Research and Applications (SRA) CubeSat Internals}}
+    {Used in an annual competition hosted by the Experimental Sounding Rocket Association, this software provided communication to the satellite from a ground-station.
+    Written in Go, these programs managed physical components of the 3u sized experimental cube satellite through a distributed platform across multiple microcomputers.
+    Communication to the software controller was sent from the ground-station was sent via radio.}
 \resumeSubHeadingListEnd
 
 
@@ -103,11 +106,9 @@
     {Web Developer}{May 2017 - Present}
         \resumeItemListStart
             \resumeItem
-            {Developed 12 factor apps and services to run in docker swarm.}
+            {Developed applications and services to build and deploy on docker swarm.}
             \resumeItem
-            {Worked in full stack role to quickly develop and demo new projects and technologies.}
-            \resumeItem
-            {Refactored badly written sections to improve overall code health and increase performance.}
+            {Refactored sections to improve overall code health and increase performance.}
             \resumeItem
             {Collaborated with developers to create optimal designs and workflows for back-end services.}
             \resumeItem
@@ -130,29 +131,24 @@
 \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
+%--------TECHNICAL EXPERTISE------------
+\section{Technical Expertise}
 \resumeSubHeadingListStart
     \resumeSubItem
-    {\textbf{Patient Visualization Tool}}
-    {Web Application used to see concentrations of patients across the United States.
-    Users can filter the view by geolocation, diagnosis codes, and patient age ranges.
-    The client application is written using Vuejs, Leaflet, and Material Design principles.
-    The back-end application is written in Go.
-    The client and server communicate using gRPC.}
+    {\textbf{Languages}}
+    {Python, Golang, C\#, C/x86 Assembly, SQL, Javascript, HTML/CSS}
     \resumeSubItem
-    {\textbf{Distributed Management Tool}}
-    {Software used to experiment with concurrent programming and distributed service design.
-    The stack includes a Command and Control (C2) server, a package download server, and an Advanced Persistent Threat (APT) application.
-    The APT has a tiny footprint and runs management functionality modularly upon request.
-    The APT establishes a communication channel with the C2 and intelligently requests executables from local download servers.
-    The system is also capable of switching to a decentralized C2 system using APTs and a version of the RAFT consensus algorithm.}
-    \resumeSubItem
-    {\textbf{ESRA CubeSat Internals}}
-    {Software for the internals of a 3u sized experimental cube satellite.
-    Written in Go and designed to manage physical components of the satellite on a simple distributed platform across multiple Raspberry Pi microcomputers.
-    Accompanied by a ground-station application which communicates with the cube satellite over radio.
-    Software was used for an annual competition hosted by the Experimental Sounding Rocket Association.}
+    {\textbf{Technologies}}
+    {Flask, Git, Docker Swarm, .NET Core, MySQL, Redis, Kafka, LaTeX, Bash, Vim}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Washington State University Vancouver}{Vancouver, WA}
+    {Bachelor of Science in Computer Science}{Expected: May 2021}
 \resumeSubHeadingListEnd
 
 
