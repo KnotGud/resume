@@ -1,4 +1,4 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -50,6 +50,14 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeProjectItem}[2]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} \\
+            \textit{\small#2} \\
+        \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -74,27 +82,15 @@
 \end{tabular*}
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
+%--------SKILLS------------
+\section{Skills}
 \resumeSubHeadingListStart
     \resumeSubItem
-    {\textbf{Patient Visualization Tool}}
-    {A map based web application tool that assists in the discovery of healthcare providers based on various search criteria like their diagnosis codes, patient age ranges, etc.
-    This product is targeted at select group of corporate entities operating in pharmaceuticals and case management. 
-    In this project I demonstrated the use of tools like the gRPC framework because it performs well at scale. 
-    The product back-end was written in Go and communicated to a Vuejs and Leaflet front-end using gRPC.}
+    {\textbf{Languages}}
+    {(\emph{Proficient}) Python, Golang, (\emph{Familiar}) C\#, C/x86 Assembly, SQL, Javascript, HTML/CSS}
     \resumeSubItem
-    {\textbf{Distributed Management Tool}}
-    {This software allows users to experiment with concurrent programming and distributed service design.
-    The stack includes: Command and Control (C2) server, Package download server, Advanced Persistent Threat (APT) application.
-    The APT has a tiny footprint and runs management functionality modularly upon requests.
-    The APT establishes a communication channel with the C2 and intelligently requests executables from local download servers.
-    This system is also capable of switching to a decentralized C2 system that uses the APTs and a version of the RAFT consensus algorithm.}
-    \resumeSubItem
-    {\textbf{Systems Research and Applications (SRA) CubeSat Internals}}
-    {Used in an annual competition hosted by the Experimental Sounding Rocket Association, this software provided communication to the satellite from a ground-station.
-    Written in Go, these programs managed physical components of the 3u sized experimental cube satellite through a distributed platform across multiple microcomputers.
-    Communication to the software controller was sent from the ground-station was sent via radio.}
+    {\textbf{Technologies}}
+    {Flask, Git, Docker Swarm, .NET Core, MySQL, Redis, Kafka, LaTeX, Bash, Vim}
 \resumeSubHeadingListEnd
 
 
@@ -120,7 +116,7 @@
             \resumeItem
             {Introduced gRPC and the micro-service architecture to support communication between different languages and environments across the company's applications and services.}
             \resumeItem
-            {Added a caching mechanism to a taxing web-API route which improved performance and decreased load on other services.}
+            {Added a caching mechanism to a taxing API route which improved performance of dependent services.}
             \resumeItem
             {Supported the adoption of Git from SVN by suggesting a series of workflows to ease transition.}
             \resumeItem
@@ -131,24 +127,53 @@
 \resumeSubHeadingListEnd
 
 
-%--------TECHNICAL EXPERTISE------------
-\section{Technical Expertise}
-\resumeSubHeadingListStart
-    \resumeSubItem
-    {\textbf{Languages}}
-    {Python, Golang, C\#, C/x86 Assembly, SQL, Javascript, HTML/CSS}
-    \resumeSubItem
-    {\textbf{Technologies}}
-    {Flask, Git, Docker Swarm, .NET Core, MySQL, Redis, Kafka, LaTeX, Bash, Vim}
-\resumeSubHeadingListEnd
-
-
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
     \resumeSubheading
     {Washington State University Vancouver}{Vancouver, WA}
     {Bachelor of Science in Computer Science}{Expected: May 2021}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Patient Visualization Tool} {Fall 2019}
+    {A map based web app that assists in the discovery of healthcare providers} {}
+    \resumeItemListStart
+        \resumeItem
+        {Demonstrated to a select group of corporate entities operating in pharmaceuticals and case management.}
+        \resumeItem
+        {Vuejs front-end using leaflet for mapping and material design components.}
+        \resumeItem
+        {Golang back-end gRPC service that aggregates data and serves summaries.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Distributed Management Tool} {Spring 2019}
+    {This software allows users to experiment with concurrent programming and distributed service design.} {}
+    \resumeItemListStart
+        \resumeItem
+        {Application Stack: Command and Control (C2) server, Package download server, Advanced Persistent Threat (APT) application.}
+        \resumeItem
+        {APT has a tiny footprint and runs management functionality modularly upon requests.}
+        \resumeItem
+        {APT establishes a communication channel with the C2 and intelligently requests executables from local download servers.}
+        \resumeItem
+        {System is also capable of switching to a decentralized C2 system that uses the APTs and a version of the RAFT consensus algorithm.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Systems Research and Applications (SRA) CubeSat Internals} {Fall 2018}
+    {A distributed software that manages physical components of a Cube Satellite} {}
+    \resumeItemListStart
+        \resumeItem
+        {Used in an annual competition hosted by the Experimental Sounding Rocket Association, this software provided communication to the satellite from a ground-station.}
+        \resumeItem
+        {Written in Go, these programs managed physical components of the 3u sized experimental cube satellite through a distributed platform across multiple microcomputers.}
+        \resumeItem
+        {Communication to the software controller was sent from the ground-station was sent via radio.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 
